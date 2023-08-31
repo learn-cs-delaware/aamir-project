@@ -5,13 +5,10 @@ def setup():
     my_turtle = Turtle()
     return my_turtle
 
-# Call setup to get your turtle! How do we get the turtle?
-
-
-# 1. Make the turtle do a circle! Hint: Python turtle circle
-
-# 2. Make the turtle turn green! How do we change the turtle's color? 
-
-# 3. Make the turtle do a spiral: for loop review:
-# for i in range(5):
-#   print(i)
+turtle = setup()
+turtle.speed(1)
+turtle.circle(100)
+turtle.color("green")
+for i in range(100):
+    turtle.forward(i+5)
+    turtle.right(10)
